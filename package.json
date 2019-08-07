@@ -1,0 +1,35 @@
+{
+  "name": "dysc",
+  "version": "1.0.0",
+  "description": "Dynamic variables",
+  "main": "dist/dysc.cjs.js",
+  "module": "dist/dysc.esm.js",
+  "browser": "dist/dysc.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrendanCannell/dysc.git"
+  },
+  "keywords": [
+    "dynamic",
+    "scope",
+    "variables"
+  ],
+  "author": "Brendan Cannell <brendan@cannells.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrendanCannell/dysc/issues"
+  },
+  "homepage": "https://github.com/BrendanCannell/dysc#readme",
+  "devDependencies": {
+    "rollup": "^1.19.4"
+  },
+  "files": [
+    "dist"
+  ]
+}
