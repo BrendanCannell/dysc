@@ -1,15 +1,16 @@
 {
-  "name": "dysc",
-  "version": "1.0.0",
+  "name": "@brendancannell/dysc",
+  "version": "0.1.0",
   "description": "Dynamic variables",
   "main": "dist/dysc.cjs.js",
   "module": "dist/dysc.esm.js",
   "browser": "dist/dysc.umd.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "build": "./node_modules/.bin/rollup -c",
+    "dev": "./node_modules/.bin/rollup -c -w",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -31,5 +32,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
